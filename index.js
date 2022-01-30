@@ -9,6 +9,10 @@ app.use(bodyParser.json());
 let rooms = [];
 let id = 0;
 
+app.get('/', (req, res) => {
+    res.status(200).json({message: "Ok"});
+})
+
 /*
     Create a room with a POST request
     Example : Send a POST request with JSON date 
